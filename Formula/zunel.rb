@@ -66,4 +66,13 @@ class Zunel < Formula
     # sample files.
     pkgshare.install(*leftover_contents) unless leftover_contents.empty?
   end
+
+
+  service do
+    run [opt_bin/"zunel", "gateway"]
+    keep_alive true
+    log_path var/"log/zunel-gateway.out.log"
+    error_log_path var/"log/zunel-gateway.err.log"
+    environment_variables RUST_LOG: "info,zunel=info"
+  end
 end
