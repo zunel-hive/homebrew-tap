@@ -1,25 +1,25 @@
 class Zunel < Formula
   desc "Rust CLI and gateway for the Zunel personal AI assistant."
   homepage "https://github.com/zunel-hive/zunel-binaries"
-  version "0.2.3"
+  version "0.2.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.3/zunel-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "e6733b83eb915abd74f563005c300b8034f2293fd28e71601fb3d2b9a71be71f"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.4/zunel-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "c08bbec1ec5bb3af66b1bc168786ea075caf88d8e23d48548fc0229bb6fbd49f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.3/zunel-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "55000979127f50bd79410b700b45f174bb2378427189e53ce7603359dd3dfdba"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.4/zunel-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "06df938c96975c1b23a21fed5c67d0cc801a11e3e1ee3621e69297f95632a30b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.3/zunel-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "4c0329f2f930de678a61a5d1cf07211236e9c70db3d14712fbd1891eef133562"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.4/zunel-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "009c136629b01b6dd46e875dfe0fd1016fe59568d592b330174ec8a97cf8eb45"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.3/zunel-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "1ff22e59bec82ff2066a3679a022922253cfe476eef076dfb3f38109254fcaf9"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.4/zunel-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "c51028ff25dcf4342c4285aa622ad2df736de65be517523477567f9016ab94e3"
     end
   end
   license "MIT"
@@ -72,6 +72,7 @@ class Zunel < Formula
     keep_alive true
     log_path var/"log/zunel-gateway.out.log"
     error_log_path var/"log/zunel-gateway.err.log"
-    environment_variables RUST_LOG: "info,zunel=info"
+    environment_variables RUST_LOG: "info,zunel=info",
+                          PATH:     "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
   end
 end
