@@ -1,25 +1,25 @@
 class Zunel < Formula
   desc "Rust CLI and gateway for the Zunel personal AI assistant."
   homepage "https://github.com/zunel-hive/zunel-binaries"
-  version "0.2.7"
+  version "0.2.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.7/zunel-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "cb2340f5c4ae0827e4868e17735296b07a18c2bf8aa5520c546dd42808be95ab"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.8/zunel-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "82daebadf0418243a3f4a78e8a770baeceb0d9d5755876e54416c2afa6de3a4b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.7/zunel-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "b536608d5f286d0f95e355b1c5f3b01be2b83ee19f939def8a47883e042cfba3"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.8/zunel-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "fe50f40c1ebade8a39d1b4b98ec181f0808cede885b2fcd517dde897fa05b439"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.7/zunel-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "81e615cebebfa93434c44f9e61d7b18c32da7904f3c5ab840c734b0c779ae322"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.8/zunel-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "7b634fd63965e2c19eb15242b93b75ced19cc903feff23a5a82e72a833c939c4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.7/zunel-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "dc0966595f3677bcb957968559c2f5e41a915c65942224021d7b46e51aae128f"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.8/zunel-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "b4fd26c4ed5ea50ebc563b31dad2c61c6ba8ed124aa573c81d6ba3251a4d0640"
     end
   end
   license "MIT"
