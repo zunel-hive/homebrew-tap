@@ -1,25 +1,25 @@
 class Zunel < Formula
   desc "Rust CLI and gateway for the Zunel personal AI assistant."
-  homepage "https://github.com/zunel-hive/zunel-binaries"
-  version "0.2.11"
+  homepage "https://github.com/zunel-hive/homebrew-tap"
+  version "0.2.12"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.11/zunel-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "71c040d1b458e74f2555781a0b843e4208359ce496101fbbbaf02332ed80d0ca"
+      url "https://github.com/zunel-hive/homebrew-tap/releases/download/v0.2.12/zunel-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "bce35b2e7aa85e5297ff483995d53d7d4557bb82b60ba891e3ab1013e0b2bb43"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.11/zunel-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "3b9f11cf58f87cc7c45c734d2ef93fd583d699ced146a886964320813f17a756"
+      url "https://github.com/zunel-hive/homebrew-tap/releases/download/v0.2.12/zunel-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "88d63228003c434d741506928b9adfeb4fa0bb5c8cdb0bf5e9cce1892b431f6f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.11/zunel-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "cdbecad01c31b620ee8af5cb634ecc86f233d3a261bee93b9c773725ec7f75d0"
+      url "https://github.com/zunel-hive/homebrew-tap/releases/download/v0.2.12/zunel-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "49f327d2cbbc82d71778a11092cc8dd9e3ca28c8df143dd1bccb91e053e011f2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.11/zunel-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "51d09da930c282309fea5f5b25763b6e0a0c287e3e32152a3782a3de670acc92"
+      url "https://github.com/zunel-hive/homebrew-tap/releases/download/v0.2.12/zunel-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "c0b263bc6e555c406658dc3f805c333d93fdcb7def31b2788cb8d963ae024b76"
     end
   end
   license "MIT"
