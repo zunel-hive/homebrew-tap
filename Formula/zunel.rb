@@ -1,25 +1,25 @@
 class Zunel < Formula
   desc "Rust CLI and gateway for the Zunel personal AI assistant."
   homepage "https://github.com/zunel-hive/zunel-binaries"
-  version "0.2.10"
+  version "0.2.11"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.10/zunel-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "168ac5a3ba0ce14853eb5606e83e2ae0ff1e5bf75ed7aeb67f798cb6cda64889"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.11/zunel-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "71c040d1b458e74f2555781a0b843e4208359ce496101fbbbaf02332ed80d0ca"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.10/zunel-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "7da0d6e03e6a664d1520a382e8f3f6169ed868ab62ba18dd8fdace25eae049bb"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.11/zunel-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "3b9f11cf58f87cc7c45c734d2ef93fd583d699ced146a886964320813f17a756"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.10/zunel-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "1883bfabe0d691a07c0f2214497c26e2e2c19ae00fa34cb0d8b26506331c975d"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.11/zunel-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "cdbecad01c31b620ee8af5cb634ecc86f233d3a261bee93b9c773725ec7f75d0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.10/zunel-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "1edbb7743e94c6a16a59e80da13f75c878f4e897cb45f941c7b04b1c3fb5aa9b"
+      url "https://github.com/zunel-hive/zunel-binaries/releases/download/v0.2.11/zunel-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "51d09da930c282309fea5f5b25763b6e0a0c287e3e32152a3782a3de670acc92"
     end
   end
   license "MIT"
