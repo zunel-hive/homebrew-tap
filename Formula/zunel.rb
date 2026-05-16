@@ -1,25 +1,25 @@
 class Zunel < Formula
   desc "CLI and Slack gateway for the Zunel personal AI assistant."
   homepage "https://github.com/zunel-bot/homebrew-tap"
-  version "2.2.1"
+  version "1.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/zunel-bot/homebrew-tap/releases/download/v2.2.1/zunel-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "6ae87200b0e39cdb97f5e02654029df8205509e9b20a3f11225ab304e05466b7"
+      url "https://github.com/zunel-bot/homebrew-tap/releases/download/v1.0.0/zunel-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "f314b48eeead9bbc0128c457768a4b4aa0512eaa2f25cee3951548e29cd2f6df"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zunel-bot/homebrew-tap/releases/download/v2.2.1/zunel-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "6751e292995771ee79815bab98b0747a1d874cdf64f7705c18ddc9fdd3673500"
+      url "https://github.com/zunel-bot/homebrew-tap/releases/download/v1.0.0/zunel-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "3b4b812743b2bccb090b4b757809d9ac535ece25969dc9f6a67669c0de53eb19"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/zunel-bot/homebrew-tap/releases/download/v2.2.1/zunel-cli-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "26ad6566c44ed443fce61c602eff0360e064dbdf966f829c618568b9cb269bbc"
+      url "https://github.com/zunel-bot/homebrew-tap/releases/download/v1.0.0/zunel-cli-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "88ceba3ef65c7e2d32ee5be692ec899a4386e8080ba279dec529f9b583d23f8a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/zunel-bot/homebrew-tap/releases/download/v2.2.1/zunel-cli-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "6398461cc09780e52d550593c744d340e26b1ebbd767fad157107f30ef3d384a"
+      url "https://github.com/zunel-bot/homebrew-tap/releases/download/v1.0.0/zunel-cli-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "a1ddc2e530c53caf4b98013ed8b998fe4daddf3f8b13f18d81f69230ee9a81ed"
     end
   end
   license "MIT"
